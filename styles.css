@@ -1,0 +1,98 @@
+/* Estilo general del cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif; /* Default font */
+    background-color: #f0f2f5;
+    overflow-x: hidden;
+    transition: font-family 0.3s ease; /* Smooth transition for font changes */
+}
+
+/* Estilo de la sección hero con fondo de imagen */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/img/proyector-epson.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo del contenido dentro de la sección hero */
+.hero-content {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo del título en la sección hero */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: slideInDown 1s ease-in-out;
+}
+
+/* Estilo del párrafo en la sección hero */
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la galería de imágenes */
+#imageGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Estilo de las imágenes dentro de la galería */
+.gallery-image {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Estilo para la imagen seleccionada */
+.gallery-image.selected {
+    border: 3px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Efecto hover para las imágenes de la galería */
+.gallery-image:hover {
+    opacity: 0.9;
+}
+
+/* Animación para el título de la sección hero */
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo para el formulario de contacto compacto */
+.contact-card {
+    max-width: 350px;
+    padding: 15px;
+}
+.contact-card .form-control {
+    font-size: 0.9rem;
+}
+.contact-card .btn {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+}
+
+/* Estilo para la sección de cambio de fuente */
+#font-section select {
+    margin-right: 10px;
+}
