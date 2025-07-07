@@ -96,3 +96,25 @@ body {
 #font-section select {
     margin-right: 10px;
 }
+
+/* Estilos para el formulario de registro */
+#registro .form-control {
+    font-size: 0.9rem;
+}
+#registro .form-control.valid {
+    border-color: #28a745;
+    background-color: #e8fce8;
+}
+#registro .form-control.invalid {
+    border-color: #dc3545;
+    background-color: #fce8e8;
+}
+#registro .text-danger {
+    display: block;
+    font-size: 0.75rem;
+    margin-top: 5px;
+}
+#submitBtn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
